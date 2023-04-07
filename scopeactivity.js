@@ -15,7 +15,7 @@ function outer(){
     inner(a,b);
 
     console.log('bouncy a -', a);
-    console.log('bouncy b', b);
+    console.log('bouncy b -', b);
 }
   
   outer();
