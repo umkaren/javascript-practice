@@ -4,16 +4,18 @@ function getHand() {
     return hands[parseInt(Math.random() * 10) % 3];
     }
 
-//  define players 1 and 2
+//  define players
 let player1 = 
     {name: 'Player 1', getHand}
-
 let player2 = 
     {name: 'Player 2', getHand}
+let player3 = 
+    {name: 'Player 3', getHand};
+let player4 =
+    {name: 'Player 4', getHand};
 
 //how a round is won
 function playRound(player1, player2) {
-
     let hand1 = player1.getHand();
     let hand2 = player2.getHand();
     let winner = null;
@@ -52,13 +54,6 @@ function playGame(player1, player2, playUntil)  {
         return player2
     }
 }
-
-
-// define players 3 and 4
-let player3 = 
-    {name: 'Player 3', getHand};
-let player4 =
-    {name: 'Player 4', getHand};
 
 //final showdown
 function playTournament(player1, player2, player3, player4, playUntil) {
