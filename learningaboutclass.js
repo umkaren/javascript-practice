@@ -28,7 +28,7 @@ class workconditions extends job {
     this.exemptStatus = exemptStatus;
     }
     getOnsite() {
-        return `This position is ${this.worksite}.`
+        return super.getName(this.name) + ` This position is ${this.worksite}.`
     }
     getExemptStatus() {
         return `It is ${this.exemptStatus}.`
