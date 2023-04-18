@@ -35,8 +35,8 @@ const addItemForm = document.getElementById('addItemForm');
 const addButton = document.getElementById('addButton');
 addItemForm.addEventListener('submit', function(event) {
     event.preventDefault(); 
-    const itemName = addItemForm.elements.itemName.value;
-    const itemPrice = addItemForm.elements.itemPrice.value;
+    const itemName = document.getElementById('itemName').value;
+    const itemPrice = document.getElementById('itemPrice').value;
     const item = {id: Date.now(), name: itemName, price: Number(itemPrice)};
     addItem(item);
     addItemForm.reset();
